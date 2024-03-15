@@ -43,15 +43,13 @@ void Update()
  public void BtnClick(string btn){   // метод для кнопок
   if(btn == "Click"){
    Time.timeScale = 1;
-   players [k].SetActive (false); 
-// отключаем активный объект(меч, щит...)
+   
    k++;          
    if (k >= prefabs.Length) {     
     k = 0; 
 // обнуляем счетчик, если k превышает кол-во префабов
    } 
-   players [k].SetActive (true);
-// активируем объект (меч, щит...)
+   
   }
   
  }
